@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="images/logo_ld.png">
+        <title>Thomas Tusaccin</title>
+    </head>
+
+    <body>
+        <div class="top-section">
+            
+            <header style="position: static;">
+                <nav class="navbar">
+                    <ul class="sidebar">
+                        <li onclick=closeSidebar()><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                        </a></li>
+
+                        <li><a href="index.html#about">À propos</a></li>
+                        <li><a href="index.html#skills">Compétences</a></li>
+                        <li><a href="index.html#projects">Projets personnels</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="index.html"><img src="images/logo_ld.png" width="50px" height="50px"></a></li>
+                        <li class="hide-on-mobile"><a href="index.html#about">À propos</a></li>
+                        <!-- <li class="hide-on-mobile"><a href="index.html#skills">Compétences</a></li> -->
+
+                        <div class="dropdown hide-on-mobile">
+                            <a href="index.html#skills">Compétences</a>
+                            <div class="dropdown-content">
+                                <a href="c1.html">Développer</a>
+                                <a href="c2.html">Optimiser</a>
+                                <a href="c3.html">Administrer</a>
+                                <a href="c4.html">Gérer</a>
+                                <a href="c5.html">Conduire</a>
+                                <a href="c6.html">Collaborer</a>
+                            </div>
+                        </div>
+
+                        <li class="hide-on-mobile"><a href="index.html#projects">Projets personnels</a></li>
+                        <li class="hide-on-mobile"><a href="index.html#contact" class="contact-button">Contact</a></li>
+                        <li class="menu-button" onclick=showSidebar()><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                        </a></li>
+                    </ul>
+                </nav>
+
+                <script>
+                    function showSidebar() {
+                        const sidebar = document.querySelector(".sidebar");
+                        sidebar.style.display = "flex";
+                    }
+
+                    function closeSidebar() {
+                        const sidebar = document.querySelector(".sidebar");
+                        sidebar.style.display = "none";
+                    }
+                </script>
+            </header>
+            
+
+            <!-- Accueil avec h1 -->
+                <div class="accueil">
+                    <!-- Fond parallax -->
+                    <div class="image-scroll-1"></div>
+                    <div class="image-scroll-2"></div>
+                    <div class="image-scroll-3"></div>
+
+                    <div class="titre">
+                        <h1>THOMAS TUSACCIN</h1>
+                        <h2 style="color: #D6E647;">Étudiant en première année de BUT Informatique</h2>
+                        <h3>Recherche une alternance pour la rentrée 2025</h3>
+                    </div>
+                </div>
+        </div>
+        
+
+        
+        <main>
+            <article id="about" class="dark">
+                <div class="presentation">
+                    <div class="paragraphe-presentation">
+                        <img src="images/otterspace-white.png">
+
+                        <p>
+                            est mon pseudonyme en tant qu'artiste et développeur. Actuellement en première année de 
+                            <a href="https://iut-lannion.univ-rennes.fr/informatique">BUT Informatique à l'IUT de Lannion</a>, je recherche une alternance en développement logiciel
+                            ou Web pour la rentrée prochaine. J'ai choisi le parcours 
+                            <a href="https://formations.univ-rennes.fr/parcours/informatique-info-parcours-realisation-dapplications-conception-developpement-validation">
+                                Réalisation d'applications
+                            </a> !
+                        </p>
+
+                        <p>
+                            Dans mon temps libre, je partage mes créations. Dessins, compositions au piano, poèmes :
+                            tout ce qui me plaît. Et j'aime coder ! En fait, je rêve de devenir 
+                            <a href="https://www.onisep.fr/ressources/univers-metier/metiers/concepteur-conceptrice-de-jeux-video">
+                                game developer
+                            </a> depuis
+                            mon enfance.
+                        </p>
+
+                        <p>
+                            C'est pour me rapprocher de ce rêve que j'ai créé un club de développement de jeux vidéo
+                            à l'IUT de Lannion...
+                        </p>
+
+                        <a href="#projects"><img src="images/logo_ld_long.png"></a>
+                    </div>
+
+                    <div class="information">
+                        <img src="images/Moi.jpg">
+
+                        <div>
+                            <p>
+                                <strong>Mention Très bien avec les félicitations du jury</strong> <br>
+                                Baccalauréat général, spécialités 
+                                <a href="https://www.letudiant.fr/lycee/specialites-bac-general/article/presentation-et-programme-de-la-specialite-mathematiques-en-classe-de-premiere.html">
+                                    Mathématiques</a>, 
+                                
+                                <a href="https://www.letudiant.fr/lycee/specialites-bac-general/article/presentation-et-programme-de-la-specialite-numerique-et-sciences-informatiques-nsi-en-classe-de-premiere.html">
+                                    NSI</a> et 
+                                
+                                <a href="https://www.letudiant.fr/lycee/specialites-bac-general/article/presentation-et-programme-de-la-specialite-langues-litteratures-et-cultures-etrangeres-llce-en-classe-de-premiere.html">
+                                    LLCE Anglais
+                                </a>
+                                 (2024)
+                                    
+                            </p>
+
+                            <p>
+                                <strong>Parmi les trois meilleurs étudiants</strong> <br>  
+                                de ma promotion en BUT Informatique (2025)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </article>
+
+            <article id="skills" class="dark-purple">
+                <h2 style="color: white;">Mes compétences</h2>
+
+                <div>
+                    <div class="competences">
+                        <a class="competence" href="c1.html">
+                            <h3>Développer des applications</h3>
+                            <p>Un jeu de Snake codé sur terminal, entièrement documenté.
+                                <br>
+                                <em>Langage C</em>
+                            </p>
+                        </a>
+
+                        <a class="competence" href="c2.html">
+                            <h3>Optimiser des applications</h3>
+                            <p>Deux serpents autonomes s'affrontent.
+                                <br>
+                                <em>Langage C</em>
+                            </p>
+                        </a>
+
+                        <a class="competence" href="c3.html">
+                            <h3>Administrer des systèmes</h3>
+                            <p>Un site dynamique avec un système d'authentification et une base de données.
+                                <br>
+                                <em>HTML, CSS, JavaScript, PHP, MySQL</em>
+                            </p>
+                        </a>
+
+                        <a class="competence" href="c4.html">
+                            <h3>Gérer des données</h3>
+                            <p>Une implémentation des algorithmes k-NN et k-means.
+                                <br>
+                                <em>Python</em>
+                            </p>
+                        </a>
+
+                        <a class="competence" href="c5.html">
+                            <h3>Conduire un projet</h3>
+                            <p>Un site vitrine pour les Jeux Olympiques de Paris 2024, avec conception d'une charte graphique.
+                                <br>
+                                <em>HTML, CSS, Figma</em>
+                            </p>
+                        </a>
+
+                        <a class="competence" href="c6.html">
+                            <h3>Travailler en équipe</h3>
+                            <p>Une compétition nationale des IUT pendant 24 heures d'affilée.
+                                <br>
+                                <em>Algorithmique, Web, cybersécurité</em>
+                            </p>
+
+                        </a>
+                    </div>
+                </div>
+                    
+            </article>
+
+            <article id="projects">
+                <h2>Projets personnels</h2>
+
+                <div class="hbox origine">
+                    <div class="hbox">
+                        <img class="left-poster" src="images/poster_ld_left.jpg">
+                        <img class="right-poster" src="images/poster_ld_right.jpeg">
+                    </div>
+                    
+
+                    <div class="vbox">
+                        <h3>L'origine de Local Dreamer</h3>
+
+                        <p>
+                            <strong>Local Dreamer est une équipe de développement de jeux vidéo à l'IUT de Lannion.</strong>
+                            Mon objectif : réunir des passionné.e.s, peu importe leur expérience.
+                        </p>
+
+                        <p>
+                            <strong>Programmeurs, game designers, artistes, musiciens, écrivains...</strong> tous sont les bienvenus.
+                            Pour concrétiser cette idée, il m'a fallu la pitcher au bureau des élèves de l'IUT.
+                            Et l'idée a plu.
+                        </p>
+
+                        <p>
+                            Alors j'ai créé un <strong>logo</strong>, une <strong>police d'écriture</strong> que vous pouvez lire dans 
+                            ce site. J'ai réalisé <strong>l'affiche ci-contre</strong>, et réussi à réserver une des salles de l'IUT
+                            les jeudis après-midi. <strong>Local Dreamer était né !</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hbox maintenant">
+                    <div class="vbox">
+                        <h3>Et maintenant ?</h3>
+
+                        <p>
+                            La première réunion de Local Dreamer a eu lieu le <strong>jeudi 3 avril</strong> et a réuni 21 personnes. Un véritable succès !
+                        </p>
+
+                        <p>
+                            Aujourd'hui, une <strong>dizaine de membres assidus</strong> viennent aux réunions tous les jeudis. Nous travaillons sur notre premier
+                            projet : <strong>Erminig</strong>, un jeu aux décors labyrinthiques et aux ambiances cauchemardesques.
+                        </p>
+
+                        <p>
+                            Dès la rentrée prochaine, nous espérons faire parler de nous et <strong>recruter des membres</strong> parmi les étudiants 
+                            de première année.
+                        </p>
+                        
+                        <p>
+                            Pour plus d'informations, suivez le compte Instagram
+                            <a href="https://www.instagram.com/localdreamer.lan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@localdreamer.lan</a>
+                            ou <a href="mailto:localdreamer.iut@gmail.com">envoyez-nous un mail !</a>
+                        </p>
+                    </div>
+                    
+                    <img src="images/dreamers.jpg">
+                </div>
+
+                <hr style="margin-bottom: 2em;">
+
+                <!-- Autres projets -->
+                <h3 style="margin-bottom: 1em;">Autres projets</h3>
+
+                <div class="hbox" style="align-items: center; flex-wrap: wrap;">
+                    <img style="width: 25%;" src="images/Zoro.png">
+                    <iframe id="blue-waltz" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1893860226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <img style="width: 40%;" src="images/Eren.webp">
+                </div>
+            </article>
+
+
+            <article id="contact">
+                <div class="hbox">
+                    
+                </div>
+
+                <div class="vbox">
+                    <h2 style="color: white;">Contactez-moi !</h2>
+
+                    <div class="hbox icones">
+                        <a href="mailto:t.tusaccin@gmail.com">
+                            <div class="vbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"/></svg>
+                                <p>Mail</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/thomas-tusaccin">
+                            <div class="vbox">
+                                <svg height="100px" width="100px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-95.5 -95.5 573.00 573.00" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#ffffff;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg>
+                                <p>LinkedIn</p>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+33780369278">
+                            <div class="vbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19 13-32t32-13h140q14 0 24 10t14 25l27 126q2 14-.5 25.5T359-634L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23-15t26-2l119 26q15 4 25 16t10 27v135q0 19-13 32t-32 13Z"/></svg>
+                                <p>Téléphone</p>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                    <img src="images/CV.png">
+                    <a class="download-button" href="images/TUSACCIN_Thomas_CV.pdf" download>Téléchargez mon CV !</a>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            Site développé par Thomas TUSACCIN, en HTML, CSS et JavaScript, sans intelligence artificielle.  <br>
+            © Thomas TUSACCIN 2025
+        </footer>
+
+        <aside>
+            <a onclick=topFunction() id="bouton-top" title="Remonter">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M450-160v-526L202-438l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+            </a>
+        </aside>
+
+        <script>
+            const bouton = document.getElementById("bouton-top");
+            let space = 40;
+
+            // Ne montrer le bouton qu'à partir de 40 pixels du haut de la page
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > space || document.documentElement.scrollTop > space) {
+                    bouton.style.display = "block";
+                } else {
+                    bouton.style.display = "none";
+                }
+            }
+
+            // Remonter en haut après le clic
+            function topFunction() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        </script>
+    </body>
+</html>
