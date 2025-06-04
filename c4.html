@@ -112,6 +112,36 @@
         </article>
     </main>
 
-    
+    <footer>
+        Site développé par Thomas TUSACCIN, en HTML, CSS et JavaScript, sans intelligence artificielle.  <br>
+        © Thomas TUSACCIN 2025
+    </footer>
+
+    <aside>
+        <a onclick=topFunction() id="bouton-top" title="Remonter">
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M450-160v-526L202-438l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+        </a>
+    </aside>
+
+    <script>
+        const bouton = document.getElementById("bouton-top");
+        let space = 40;
+
+        // Ne montrer le bouton qu'à partir de 40 pixels du haut de la page
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > space || document.documentElement.scrollTop > space) {
+                bouton.style.display = "block";
+            } else {
+                bouton.style.display = "none";
+            }
+        }
+
+        // Remonter en haut après le clic
+        function topFunction() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
 </html>
