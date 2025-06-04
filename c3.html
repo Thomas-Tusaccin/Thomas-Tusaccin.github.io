@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="images/logo_ld.png">
+    <title>Développer des applications</title>
+</head>
+<body>
+    <header style="background-color: black;">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#skills">Compétences</a></li>
+                <li><a href="index.html#projects">Projets personnels</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html"><img src="images/logo_ld.png" width="50px" height="50px"></a></li>
+                <li class="hide-on-mobile"><a href="index.html#about">À propos</a></li>
+                <!-- <li class="hide-on-mobile"><a href="index.html#skills">Compétences</a></li> -->
+
+                <div class="dropdown hide-on-mobile">
+                    <a href="index.html#skills">Compétences</a>
+                    <div class="dropdown-content">
+                        <a href="c1.html">Développer</a>
+                        <a href="c2.html">Optimiser</a>
+                        <a href="c3.html">Administrer</a>
+                        <a href="c4.html">Gérer</a>
+                        <a href="c5.html">Conduire</a>
+                        <a href="c6.html">Collaborer</a>
+                    </div>
+                </div>
+
+                <li class="hide-on-mobile"><a href="index.html#projects">Projets personnels</a></li>
+                <li class="hide-on-mobile contact-button"><a href="index.html#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+
+            function closeSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+    </header>
+
+    <main>
+        <article class="dark-purple">
+            <h2 style="margin-bottom: 0; color:#D6E647;">Administrer des systèmes</h2>
+            <h3>Site dynamique avec base de données</h3>
+
+            <!--
+            <div class="skill-gif">
+                <img src="images/C2.gif">
+            </div>
+            -->
+
+            <h3>Cahier des charges</h3>
+
+            <p class="skill-p">
+                Ce projet universitaire visait à <strong>créer un site Web</strong> comportant les fonctionnalités suivantes :
+            </p>
+
+            <ul class="skill-p">
+                <li>Pages customisées avec du CSS</li>
+                <li>Espace administrateur <strong>avec authentification</strong></li>
+                <li>Authentification d'un utilisateur</li>
+                <li>Page d'inscription d'un utilisateur</li>
+                <li>Suppression des comptes non finalisés</li>
+            </ul>
+
+            <p class="border-left skill-p">
+                Nous avions le choix du thème du site et des technologies utilisées.
+            </p>
+
+            <h3>Développement</h3>
+
+            <p class="skill-p">
+                J'ai hébergé ce site sur un <strong>serveur Apache</strong>. En front-end, j'ai utilisé
+                le framework <strong>Bootstrap</strong> ainsi que les langages <strong>HTML, CSS et JavaScript</strong>. 
+                Pour concevoir le système d'authentification, j'ai dû utiliser <strong>MySQL et PHP</strong> pour l'envoi de formulaires.
+            </p>
+
+            <h3>Avantages</h3>
+
+            <p class="skill-p">
+                Ce projet m'a appris les bases du <strong>développement back-end</strong> et à structurer un site. Je suis capable 
+                de créer un formulaire, un système de connexion et un lien avec une base de données.
+            </p>
+        </article>
+    </main>
+
+    
+</body>
+</html>

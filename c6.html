@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="images/logo_ld.png">
+    <title>Travailler en équipe</title>
+</head>
+<body>
+    <header style="background-color: black;">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#skills">Compétences</a></li>
+                <li><a href="index.html#projects">Projets personnels</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html"><img src="images/logo_ld.png" width="50px" height="50px"></a></li>
+                <li class="hide-on-mobile"><a href="index.html#about">À propos</a></li>
+                <!-- <li class="hide-on-mobile"><a href="index.html#skills">Compétences</a></li> -->
+
+                <div class="dropdown hide-on-mobile">
+                    <a href="index.html#skills">Compétences</a>
+                    <div class="dropdown-content">
+                        <a href="c1.html">Développer</a>
+                        <a href="c2.html">Optimiser</a>
+                        <a href="c3.html">Administrer</a>
+                        <a href="c4.html">Gérer</a>
+                        <a href="c5.html">Conduire</a>
+                        <a href="c6.html">Collaborer</a>
+                    </div>
+                </div>
+
+                <li class="hide-on-mobile"><a href="index.html#projects">Projets personnels</a></li>
+                <li class="hide-on-mobile contact-button"><a href="index.html#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+
+            function closeSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+    </header>
+
+    <main>
+        <article class="dark-purple">
+            <h2 style="margin-bottom: 0; color:#D6E647;">Travailler en équipe</h2>
+            <h3>24h de l'info - édition 2025</h3>
+
+            <div class="skill-gif">
+                <img src="images/C6.jpg" style="width: 50%;">
+                <img src="images/C6_2.jpg" style="width: 50%;">
+            </div>
+
+            <h3>24 heures...</h3>
+
+            <p class="skill-p">
+                <strong>Celui avec le pull noir... c'est moi.</strong> Avant et après <strong>24 heures d'épreuves 
+                    informatiques sans dormir.</strong>
+            </p>
+
+            <p class="skill-p">
+                L'IUT de Lannion nous a <strong>sélectionnés</strong> pour participer aux <a href="https://24hinfo.iut.fr">24 heures 
+                de l'Info</a>, une compétition nationale faisant s'affronter 39 équipes venues de 26 IUT. Parmi elles, nous étions 
+                la <strong>seule équipe composée d'étudiants de 1ère année !</strong> Au programme, 3 épreuves :
+            </p>
+
+            <ul class="skill-p">
+                <li>Algorithmique et programmation (14h à 22h)</li>
+                <li>Web (22h à 6h)</li>
+                <li>Cybersécurité (6h à 14h)</li>
+            </ul>
+
+            <p class="border-left skill-p">
+                Nous n'étudions pas la cybersécurité en première année... et un de nos coéquipiers a raté son train ! Nous étions
+                3 sur place, et 1 à distance.
+            </p>
+
+            <h3>Les épreuves</h3>
+
+            <p class="skill-p">
+                L'épreuve d'algorithmique était la plus amusante. Nous avions <strong>12 problèmes à résoudre</strong>, peu importent 
+                les moyens. Nous nous sommes répartis les problèmes et avons travaillé ensemble sur les plus difficiles. Nous avons tous
+                utilisé <strong>Python</strong> pour sa simplicité d'utilisation.
+            </p>
+
+            <p class="skill-p" style="font-size: 1.5rem;"><strong>Nous avons décroché la 14ème place sur 39 !</strong></p>
+
+            <p class="skill-p">
+                L'épreuve Web a été <strong>très difficile</strong>. Il fallait réaliser un <strong>site orienté front-end</strong> sur le thème de 
+                <strong>"Lyon et ses lumières"</strong>. Avec la fatigue, les difficultés de communication et nos doutes, le moral 
+                de l'équipe était au plus bas.
+                <strong>Arrivés 37èmes sur 39</strong>, nous avons réussi à passer outre et faire de notre mieux pour la dernière épreuve. 
+            </p>
+
+            <p class="skill-p">
+                Enfin, l'épreuve de cybersécurité était un pas vers l'inconnu. Il s'agissait d'un <strong>Capture The Flag</strong> : il fallait retrouver
+                des textes cachés dans divers fichiers et sites. Avec l'aide d'Internet, nous avons pris nos repères et réussi à avancer.
+            </p>
+
+            <p class="skill-p" style="font-size: 1.5rem;"><strong>Et nous en sommes sortis avec une belle 16ème place !</strong></p>
+
+            <h3>Mon expérience</h3>
+
+            <p class="skill-p">
+                Traverser la France en train, aller pour la première fois à Lyon et à Paris : <strong>cette expérience m'a fait voyager !</strong>
+                Ces 24 heures m'ont aussi permis de tisser des liens, avec mes coéquipiers surtout. Et j'ai réalisé que j'avais <strong>encore
+                beaucoup à apprendre</strong>. J'espère pouvoir prendre ma revanche sur une telle épreuve un jour !
+            </p>
+        </article>
+    </main>
+
+    
+</body>
+</html>

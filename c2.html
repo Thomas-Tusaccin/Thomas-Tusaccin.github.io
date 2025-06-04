@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="images/logo_ld.png">
+    <title>Développer des applications</title>
+</head>
+<body>
+    <header style="background-color: black;">
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=closeSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#skills">Compétences</a></li>
+                <li><a href="index.html#projects">Projets personnels</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="index.html"><img src="images/logo_ld.png" width="50px" height="50px"></a></li>
+                <li class="hide-on-mobile"><a href="index.html#about">À propos</a></li>
+                <!-- <li class="hide-on-mobile"><a href="index.html#skills">Compétences</a></li> -->
+
+                <div class="dropdown hide-on-mobile">
+                    <a href="index.html#skills">Compétences</a>
+                    <div class="dropdown-content">
+                        <a href="c1.html">Développer</a>
+                        <a href="c2.html">Optimiser</a>
+                        <a href="c3.html">Administrer</a>
+                        <a href="c4.html">Gérer</a>
+                        <a href="c5.html">Conduire</a>
+                        <a href="c6.html">Collaborer</a>
+                    </div>
+                </div>
+
+                <li class="hide-on-mobile"><a href="index.html#projects">Projets personnels</a></li>
+                <li class="hide-on-mobile contact-button"><a href="index.html#contact">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex";
+            }
+
+            function closeSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none";
+            }
+        </script>
+    </header>
+
+    <main>
+        <article class="dark-purple">
+            <h2 style="margin-bottom: 0; color:#D6E647;">Optimiser des applications</h2>
+            <h3>Snake autonome en C</h3>
+
+            <div class="skill-gif">
+                <img src="images/C2.gif">
+            </div>
+
+            <h3>Cahier des charges</h3>
+
+            <p class="skill-p">
+                Après avoir réalisé le <a href="c1.html">jeu de Snake</a>, je l'ai amélioré.
+            </p>
+
+            <p class="skill-p">
+                Le but était de rendre le serpent <strong>autonome</strong>. Il calcule lui-même le <strong>chemin le plus court</strong> pour aller
+                à la pomme, même s'il nécessite de passer par les portails. Par la suite, j'ai ajouté un <strong>
+                deuxième serpent</strong> au même fonctionnement : chacun doit manger le plus de pommes pour remporter la victoire.
+            </p>
+
+            <p class="border-left skill-p">
+                Les serpents doivent éviter les obstacles : bordure, pavés, leur corps et celui de l'autre serpent ! <br>
+                Une fois qu'un des serpents a mangé 10 pommes, le jeu prend fin.
+            </p>
+
+            <h3>Développement</h3>
+
+            <p class="skill-p">
+                Ce projet a été développé en C. Il était divisé en <strong>4 versions</strong> possédant toujours plus de fonctionnalités.
+                Il fallait notamment prévoir les calculs de chemins, la détection d'obstacles et le moyen de les éviter.
+            </p>
+
+            <h3>Avantages</h3>
+
+            <p class="skill-p">
+                Ce projet posait la question de l'optimisation : aussi bien du coût de l'algorithme que des calculs de chemins. J'ai pu
+                apprendre à factoriser mon code plus efficacement.
+            </p>
+        </article>
+    </main>
+
+    
+</body>
+</html>
